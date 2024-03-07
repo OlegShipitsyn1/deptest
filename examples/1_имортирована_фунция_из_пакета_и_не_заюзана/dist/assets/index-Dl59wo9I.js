@@ -1,0 +1,5 @@
+(function(){const o=document.createElement("link").relList;if(o&&o.supports&&o.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))l(e);new MutationObserver(e=>{for(const r of e)if(r.type==="childList")for(const n of r.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&l(n)}).observe(document,{childList:!0,subtree:!0});function c(e){const r={};return e.integrity&&(r.integrity=e.integrity),e.referrerPolicy&&(r.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?r.credentials="include":e.crossOrigin==="anonymous"?r.credentials="omit":r.credentials="same-origin",r}function l(e){if(e.ep)return;e.ep=!0;const r=c(e);fetch(e.href,r)}})();var t=typeof globalThis<"u"?globalThis:typeof window<"u"?window:typeof global<"u"?global:typeof self<"u"?self:{},d=typeof t=="object"&&t&&t.Object===Object&&t,u=d,a=u,p=typeof self=="object"&&self&&self.Object===Object&&self,y=a||p||Function("return this")(),b=y,m=b,g=m.Symbol,s=g,i=s;i&&i.toStringTag;var f=s;f&&f.toStringTag;document.querySelector("#app").innerHTML=`
+  <div>
+    deptest
+  </div>
+`;setupCounter(document.querySelector("#counter"));
